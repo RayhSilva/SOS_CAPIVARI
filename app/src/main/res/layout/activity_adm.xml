@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Adm">
+
+    <View
+        android:id="@+id/containerComponentes4"
+        style="@style/ContainerComponents"
+        android:layout_width="352dp"
+        android:layout_height="627dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEnviar"
+        style="@style/Buttonn"
+        android:layout_width="133dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="12dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponentes4"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes4"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes4" />
+
+    <EditText
+        android:id="@+id/txtRua"
+        style="@style/Edit_Text"
+        android:layout_width="266dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Rua"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtBairro"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes4"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes4" />
+
+    <EditText
+        android:id="@+id/txtBairro"
+        style="@style/Edit_Text"
+        android:layout_width="266dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="324dp"
+        android:hint="Bairro"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponentes4"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes4"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="218dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="ADMINISTRADOR"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes4"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes4"
+        app:layout_constraintTop_toTopOf="@+id/containerComponentes4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="216dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="68dp"
+        android:text="Enviar Alerta"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtRua"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes4"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes4" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="142dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:text="Nível:"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes4"
+        app:layout_constraintTop_toBottomOf="@+id/txtBairro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="207dp"
+        android:layout_height="202dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviar"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes4"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes4">
+
+        <RadioButton
+            android:id="@+id/rdLeve"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:text="Leve"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rdModerado"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:text="Moderado"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rdSevero"
+            android:layout_width="120dp"
+            android:layout_height="53dp"
+            android:text="Severo"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

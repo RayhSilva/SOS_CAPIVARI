@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Noticia">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="211dp"
+        android:layout_height="95dp"
+        android:text="Ao aviso de tempestade ou ao escutar trovões "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <View
+        android:id="@+id/containerComponentes2"
+        style="@style/ContainerComponents"
+        android:layout_width="352dp"
+        android:layout_height="627dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+        android:text="Notícias"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes2"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes2"
+        app:layout_constraintTop_toBottomOf="@+id/noticia2" />
+
+    <ImageView
+        android:id="@+id/noticia2"
+        android:layout_width="125dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponentes2"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes2"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/noticia" />
+</androidx.constraintlayout.widget.ConstraintLayout>

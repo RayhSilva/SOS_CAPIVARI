@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "283304362423",
+    "project_id": "tcc2023cpv",
+    "storage_bucket": "tcc2023cpv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283304362423:android:f74e2d5005eebd05ee6832",
+        "android_client_info": {
+          "package_name": "com.example.tcc.cpv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283304362423-rc199i2ekl14stf1nqh5gbs38kpbks6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDWvfZXOxdEszOR3IppeZsasfgupdrgsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283304362423-rc199i2ekl14stf1nqh5gbs38kpbks6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

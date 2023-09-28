@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SOS Capivari</string>
+    <string name="sos_capivari">sos capivari</string>
+    <string name="Entrar">Fazer Login</string>
+    <string name="SemCadastro">Continuar Sem Cadastro</string>
+    <string name="cadastre">Cadastra-se</string>
+    <string name="text_cadastro">Não possui cadastro?Clique aqui</string>
+    <string name="btncadastrar">CADASTRAR</string>
+</resources>

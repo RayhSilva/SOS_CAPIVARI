@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".TelaPrincipal">
+
+        <View
+            android:id="@+id/containerComponentes"
+            style="@style/ContainerComponents"
+            android:layout_width="374dp"
+            android:layout_height="544dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="168dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:text="Alerta de Alagamento"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponentes"
+            app:layout_constraintTop_toBottomOf="@+id/alerta" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="119dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="4dp"
+            android:text="Notícias"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/containerComponentes"
+            app:layout_constraintTop_toBottomOf="@+id/noticia" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="142dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="24dp"
+            android:text="Previsão de Chuva"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponentes"
+            app:layout_constraintTop_toBottomOf="@+id/previsao" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="119dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="36dp"
+            android:text="Prevenção"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/containerComponentes"
+            app:layout_constraintTop_toBottomOf="@+id/prevencao" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#4169E1"
+            android:clickable="true"
+            android:tint="#FFFFFF"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <ImageView
+            android:id="@+id/noticia"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/prevencao"
+            app:layout_constraintEnd_toStartOf="@+id/alerta"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/containerComponentes"
+            app:layout_constraintTop_toBottomOf="@+id/containerComponentes"
+            app:srcCompat="@drawable/noticia" />
+
+        <ImageView
+            android:id="@+id/alerta"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/previsao"
+            app:layout_constraintEnd_toStartOf="@+id/containerComponentes"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/noticia"
+            app:layout_constraintTop_toBottomOf="@+id/containerComponentes"
+            app:srcCompat="@drawable/alerta" />
+
+        <ImageView
+            android:id="@+id/previsao"
+            android:layout_width="166dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/containerComponentes"
+            app:layout_constraintEnd_toStartOf="@+id/containerComponentes"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/prevencao"
+            app:layout_constraintTop_toBottomOf="@+id/alerta"
+            app:srcCompat="@drawable/chuva" />
+
+        <ImageView
+            android:id="@+id/prevencao"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:layout_constraintBottom_toTopOf="@+id/containerComponentes"
+            app:layout_constraintEnd_toStartOf="@+id/previsao"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/containerComponentes"
+            app:layout_constraintTop_toBottomOf="@+id/noticia"
+            app:srcCompat="@drawable/previsao2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

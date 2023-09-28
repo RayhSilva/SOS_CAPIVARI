@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Alerta">
+
+    <View
+        android:id="@+id/containerComponentes7"
+        style="@style/ContainerComponents"
+        android:layout_width="352dp"
+        android:layout_height="627dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastrar"
+        style="@style/Buttonn"
+        android:layout_width="262dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="8dp"
+        android:text="CADASTRAR ENDEREÇO"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponentes7"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes7"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes7" />
+
+    <ImageView
+        android:id="@+id/alerta2"
+        android:layout_width="99dp"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toBottomOf="@+id/containerComponentes7"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes7"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes7"
+        app:layout_constraintTop_toTopOf="@+id/containerComponentes7"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/alerta" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="197dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="1dp"
+        android:text="Alerta de Alagamento"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes7"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes7"
+        app:layout_constraintTop_toBottomOf="@+id/alerta2" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponentes7"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/containerComponentes7"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.223" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
